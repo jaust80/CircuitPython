@@ -62,7 +62,7 @@ while True:
 
 ### Evidence
 
-![Servo Gif](![Video](https://user-images.githubusercontent.com/71342179/133450701-56ac10a7-3d38-418b-b2cb-ec4ccc724889.gif)
+![Servo Gif] (![Video](https://user-images.githubusercontent.com/71342179/133450701-56ac10a7-3d38-418b-b2cb-ec4ccc724889.gif)
 
 ### Wiring
 
