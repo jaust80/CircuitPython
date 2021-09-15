@@ -66,6 +66,9 @@ while True:
 
 ### Wiring
 
+![Servo Wiring](https://user-images.githubusercontent.com/71342179/133452220-57b418f6-7657-4b98-b69d-7faccfa9c9e6.png)
+
+
 ### Reflection
 
 
