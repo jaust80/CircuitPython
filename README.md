@@ -64,6 +64,7 @@ while True:
 
 ![Servo Gif](https://user-images.githubusercontent.com/71342179/133450701-56ac10a7-3d38-418b-b2cb-ec4ccc724889.gif)
 
+(Credit: Ngawang Tenzin)
 ### Wiring
 
 ![Servo Wiring](https://user-images.githubusercontent.com/71342179/133452220-57b418f6-7657-4b98-b69d-7faccfa9c9e6.png)
