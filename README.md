@@ -128,7 +128,7 @@ while True:
 ![senseor witringt](https://user-images.githubusercontent.com/71342179/134685424-5a49c0ab-9e7b-4288-a5f3-89e078527b98.png)
 
 ### Reflection
-
+I was stuck on the fading between colors for a while but once I was told it should be made into 2 distict parts it became much clearer. I learned that with using equations you can use the simple math to cover the entire color spectrum. Ex. r = 255-((pos-5)/15*255)  g = 0 b = (pos-5)/15*255
 
 
 
