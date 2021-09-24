@@ -75,6 +75,29 @@ while True:
 I learned that python will only begin to read the file if it is saved as main or code and that computers begin to start at 0 which can cause wiring errors for beginners.
 
 
+## CircuitPython_UltraSonicSensor
+
+### Description & Code
+
+```python
+Code goes here
+
+```
+
+### Evidence
+
+### Wiring
+
+### Reflection
+
+
+
+
+
+## NextAssignment
+
+### Description & Code
+
 ## CircuitPython_LCD
 
 ### Description & Code
@@ -97,6 +120,7 @@ Code goes here
 ## NextAssignment
 
 ### Description & Code
+
 
 ```python
 Code goes here
