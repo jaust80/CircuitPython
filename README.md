@@ -122,8 +122,10 @@ while True:
 ```
 
 ### Evidence
+![Led Changing Colors](https://user-images.githubusercontent.com/71342179/134684788-f7e1d759-809d-495a-a70a-fc5cefa11928.gif)
 
 ### Wiring
+![senseor witringt](https://user-images.githubusercontent.com/71342179/134685424-5a49c0ab-9e7b-4288-a5f3-89e078527b98.png)
 
 ### Reflection
 
