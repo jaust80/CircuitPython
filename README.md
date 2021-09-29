@@ -75,6 +75,68 @@ while True:
 I learned that python will only begin to read the file if it is saved as main or code and that computers begin to start at 0 which can cause wiring errors for beginners.
 
 
+## CircuitPython_UltraSonicSensor
+
+### Description & Code
+
+```python
+import board
+import time
+import adafruit_hcsr04
+import neopixel
+sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D3, echo_pin=board.D2)
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+pos = 1
+print("new code! 2")
+time.sleep(1)
+dot.brightness = 0.1
+
+while True:
+    try:
+        pos = sonar.distance
+        print((pos))
+    except RuntimeError:
+        print("Retrying!")
+    time.sleep(0.01)
+
+    if pos < 5:
+        r = 255
+        b = 0
+        g = 0
+    elif pos < 20:
+        r = 255-((pos-5)/15*255)
+        g = 0
+        b = (pos-5)/15*255
+    elif pos < 35:
+        r = 0
+        g = (pos-20)/15*255
+        b = 255-((pos-20)/15*255)
+    else:
+        r = 0
+        g = 255
+        b = 0
+
+    dot.fill((int(r), int(g), int(b)))
+
+
+```
+
+### Evidence
+![Led Changing Colors](https://user-images.githubusercontent.com/71342179/134684788-f7e1d759-809d-495a-a70a-fc5cefa11928.gif)
+
+### Wiring
+![senseor witringt](https://user-images.githubusercontent.com/71342179/134685424-5a49c0ab-9e7b-4288-a5f3-89e078527b98.png)
+
+### Reflection
+I was stuck on the fading between colors for a while but once I was told it should be made into 2 distict parts it became much clearer. I learned that with using equations you can use the simple math to cover the entire color spectrum. Ex. r = 255-((pos-5)/15*255)  g = 0 b = (pos-5)/15*255
+
+
+
+
+## NextAssignment
+
+### Description & Code
+
 ## CircuitPython_LCD
 
 ### Description & Code
@@ -97,6 +159,7 @@ Code goes here
 ## NextAssignment
 
 ### Description & Code
+
 
 ```python
 Code goes here
