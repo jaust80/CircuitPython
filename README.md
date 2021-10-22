@@ -11,25 +11,34 @@ This repository will actually serve as a aid to help you get started with your o
 ## Hello_CircuitPython
 
 ### Description & Code
-Description goes here
 
-Here's how you make code look like code:
+We started the beginning of CircuitPython by making the small neopixel on the board light up
+
 
 ```python
-Code goes here
+import board
+import neopixel
+
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+
+print("Make it blue!")
+
+dot.brightness = .1
+
+while True:
+    dot.fill((255, 0, 255))
 
 ```
 
 
 ### Evidence
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
 
-### Wiring
-Make an account with your google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+https://user-images.githubusercontent.com/71342179/138468697-3f760769-ac02-4b76-9022-bea7139a5ac5.mp4
+
+Credit: https://github.com/hheisig51
 
 ### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person.
+Though there was a lot of trial and error especially on the coloration section it was cleared up with a little input from the teacher.
 
 
 
