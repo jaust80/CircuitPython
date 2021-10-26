@@ -88,6 +88,10 @@ I learned that python will only begin to read the file if it is saved as main or
 
 ### Description & Code
 
+For this assignment we were instructed to write code that made the neopixel on the arduino change colors as an object moves closer and further away from an ultrasonic sensor. We started with the identification and understanding of certain parts of the code we would need to write (variables and equations) this proved difficult but could be cleared up with a little teacher instruction. The code is basically split up into two large parts, the equation from red to blue then the equation from blue to green. 
+
+
+
 ```python
 import board
 import time
@@ -132,6 +136,10 @@ while True:
 
 ### Evidence
 ![Led Changing Colors](https://user-images.githubusercontent.com/71342179/134684788-f7e1d759-809d-495a-a70a-fc5cefa11928.gif)
+
+![Gabbie's gif](https://user-images.githubusercontent.com/71349797/134724959-4f1d69a2-bb28-4c98-8dd7-6bff58e07b80.gif)
+
+2nd Image credit goes to [Gabby D](https://github.com/gdaless20/Circuitpython)
 
 ### Wiring
 ![senseor witringt](https://user-images.githubusercontent.com/71342179/134685424-5a49c0ab-9e7b-4288-a5f3-89e078527b98.png)
