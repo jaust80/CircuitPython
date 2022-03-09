@@ -188,3 +188,76 @@ Code goes here
 ### Wiring
 
 ### Reflection
+
+
+
+
+## Classes, Objects, and Modules
+
+### Description and Code
+
+
+```
+''' This file is the class-based version of making a single LED fade'''
+import time
+import board
+from rgb import LED   # import the LED class from the rgb module
+
+blueLEDPin1 = board.D8
+redLEDPin1 = board.D9
+greenLEDPin1 = board.D10
+blueLEDPin2 = board.D4
+redLEDPin2 = board.D5
+greenLEDPin2 = board.D7
+
+
+myBlueLED1 = LED(blueLEDPin1)
+myRedLED1 = LED(redLEDPin1)
+myGreenLED1 = LED(greenLEDPin1)
+myBlueLED2 = LED(blueLEDPin2)
+myRedLED2 = LED(redLEDPin2)
+myGreenLED2 = LED(greenLEDPin2)
+
+while True:
+    myBlueLED1.fade()
+    time.sleep(1)
+    myBlueLED2.fade()
+    time.sleep(1)
+    myRedLED1.fade()
+    time.sleep(1)
+    myRedLED2.fade()
+    time.sleep(1)
+    myGreenLED1.fade()
+    time.sleep(1)
+    myGreenLED2.fade()
+    time.sleep(1)
+    ```
+
+```
+import time
+import board
+import pwmio
+
+class LED:      
+
+    def __init__(self, ledpin):
+        # init is like void Setup() from arduino.  Initialize your pins here
+        # start each object with "self.object"
+        self.led = pwmio.PWMOut(ledpin, frequency=5000, duty_cycle=0)
+
+
+    def fade(self):
+
+        for i in range(100):
+            # PWM LED up and down
+            if i < 50:
+                self.led.duty_cycle = int(i * 2 * 65535 / 100)  # Up
+            elif i == 50:
+                self.led.duty_cycle = 65535
+                time.sleep(1)
+            else:
+                self.led.duty_cycle = 65535 - int((i - 50) * 2 * 65535 / 100)  # Down
+            print(self.led.duty_cycle)
+            time.sleep(0.01)
+            
+```
